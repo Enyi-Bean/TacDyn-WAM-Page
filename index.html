@@ -85,13 +85,13 @@
         <p class="section-intro">Predicting future vision and tactile dynamics for contact-rich manipulation.</p>
         <figure class="architecture-figure">
           <img src="assets/main_framework.png" width="942" height="482" alt="TacDyn-WAM architecture: visual and tactile experts predict separate futures through joint attention, with tactile memory supporting the action expert." loading="lazy">
-          <figcaption><strong>TacDyn-WAM overview.</strong> The visual and tactile experts form a heterogeneous world model. A read-only Tactile Understanding Memory provides direct access to the current tactile state, allowing actions to use both present contacts and predicted futures.</figcaption>
+          <figcaption><strong>TacDyn-WAM overview.</strong> The Visual Latent Generation Expert predicts future visual latents, while the Implicit Tactile Dynamics Expert (ITDE) predicts future TacRep representations and their changes at multiple horizons in a single forward pass. The two experts use separate parameters and target spaces, coupled through joint attention. A read-only Tactile Understanding Memory supplies the current tactile state as keys and values, enabling the Action Expert to combine present contacts with predicted visual and tactile futures.</figcaption>
         </figure>
         <div class="method-details">
           <figure>
             <h3 class="figure-heading">Learning TacRep</h3>
             <img src="assets/stage1.png" alt="TacRep learning through masked tactile dynamics prediction and relational structure distillation." loading="lazy">
-            <figcaption>Masked spatio-temporal prediction learns contact evolution. Relational structure distillation regularizes local patch relations using a frozen DINOv2 teacher, helping improve robustness to out-of-distribution (OOD) tactile images.</figcaption>
+            <figcaption><strong>Tactile Dynamics Prediction (TDP)</strong> learns contact evolution by predicting masked spatio-temporal features of four-frame tactile clips against an exponential moving average (EMA) target encoder. <strong>Relational Structure Distillation (RSD)</strong> regularizes local patch relations using a frozen DINOv2 teacher, helping improve robustness to out-of-distribution (OOD) tactile images.</figcaption>
           </figure>
           <figure>
             <h3 class="figure-heading">Implicit Tactile Dynamics Expert</h3>
