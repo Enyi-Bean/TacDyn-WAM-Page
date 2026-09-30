@@ -104,6 +104,7 @@ figcaption { color: var(--muted); font-size: 13px; line-height: 1.75; margin-top
 .video-grid figure { min-width: 0; }
 .video-grid video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #111; border-radius: 6px; }
 .video-grid figcaption { margin-top: 8px; text-align: center; }
+.demo-video { display: block; width: auto; height: auto; max-width: 100%; max-height: min(72vh, 640px); margin-inline: auto; object-fit: contain; background: #111; border-radius: 8px; }
 .footer { padding: 28px 24px; background: white; font-size: 13px; color: var(--muted); }
 .footer-credit { margin-top: 7px; font-size: 11px; }
 @media (max-width: 1023px) {

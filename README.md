@@ -22,6 +22,14 @@ Open http://localhost:8000. GitHub Pages serves the root of the main branch.
 - All simulation baseline rows are included, with pretrained methods labeled.
 - The research Code button is pending until a research-code repository is supplied.
 
+## Real-robot demo
+
+The final section plays `assets/videos/real_robot_demo.mp4` (about 93 seconds,
+6 MB). The source video is remuxed with fast-start metadata without re-encoding.
+The portrait aspect ratio is preserved; the centered player is limited to 640px
+or 72% of the viewport height, whichever is smaller. It has native controls,
+muted playback, looping, a poster image, and no autoplay.
+
 ## Add the five real-world videos
 
 Place MP4 files in `assets/videos/`. In `script.js`, set the corresponding
