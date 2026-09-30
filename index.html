@@ -1,190 +1,212 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="TacDyn-WAM learns implicit tactile dynamics in a heterogeneous visuo-tactile world action model for contact-rich robot manipulation." />
-    <meta property="og:title" content="TacDyn-WAM" />
-    <meta property="og:description" content="Learning Implicit Tactile Dynamics in a Heterogeneous Visuo-Tactile World Action Model" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/main_framework.png" />
-    <title>TacDyn-WAM</title>
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main>
-      <section class="hero">
-        <div class="container">
-          <p class="venue">Preprint, 2026</p>
-          <h1><span>TacDyn-WAM:</span> Learning Implicit Tactile Dynamics in a Heterogeneous Visuo-Tactile World Action Model</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TacDyn-WAM learns implicit tactile dynamics in a heterogeneous visuo-tactile world action model for contact-rich robot manipulation.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="TacDyn-WAM">
+  <meta property="og:description" content="Learning Implicit Tactile Dynamics in a Heterogeneous Visuo-Tactile World Action Model">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://enyi-bean.github.io/TacDyn-WAM-Page/">
+  <meta property="og:image" content="https://enyi-bean.github.io/TacDyn-WAM-Page/assets/main_framework.png">
+  <title>TacDyn-WAM</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/vendor/bulma.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="top">
+    <header class="hero publication-header">
+      <div class="hero-body">
+        <div class="container is-max-desktop has-text-centered">
+          <h1 class="title publication-title">
+            <span class="model-name">TacDyn-WAM:</span> Learning Implicit Tactile Dynamics<br class="desktop-break">
+            in a Heterogeneous Visuo-Tactile World Action Model
+          </h1>
+          <p class="publication-venue">Preprint · 2026</p>
 
-          <div class="authors" aria-label="Authors">
-            <a href="#">Enyi Wang<sup>1</sup></a>
-            <a href="#">Mingxin Wang<sup>1,4</sup></a>
-            <a href="#">Quan Shi<sup>1</sup></a>
-            <a href="#">Hetian Guo<sup>1</sup></a>
-            <a href="#">Hongyu Wang<sup>1</sup></a>
-            <a href="#">Xi Wang<sup>1</sup></a>
-            <a href="#">Bin Qian<sup>1,4</sup></a>
-            <a href="#">Yupeng Zheng<sup>2</sup></a>
-            <a href="#">Wenxuan Song<sup>3</sup></a>
-            <a href="#">Houde Liu<sup>4</sup></a>
-            <a href="#">Yong Xu<sup>1</sup></a>
-            <a href="#">Cheng Chi<sup>5</sup></a>
-            <a href="#">Wenchao Ding<sup>6,7</sup></a>
-            <a href="#">Yilun Chen<sup>7</sup></a>
-            <a href="#">Yan Wang<sup>1,†</sup></a>
+          <div class="publication-authors" aria-label="Authors">
+            <span>Enyi Wang<sup>1</sup>,</span>
+            <span>Mingxin Wang<sup>1,4</sup>,</span>
+            <span>Quan Shi<sup>1</sup>,</span>
+            <span>Hetian Guo<sup>1</sup>,</span>
+            <span>Hongyu Wang<sup>1</sup>,</span>
+            <span>Xi Wang<sup>1</sup>,</span>
+            <span>Bin Qian<sup>1,4</sup>,</span>
+            <span>Yupeng Zheng<sup>2</sup>,</span>
+            <span>Wenxuan Song<sup>3</sup>,</span>
+            <span>Houde Liu<sup>4</sup>,</span>
+            <span>Yong Xu<sup>1</sup>,</span>
+            <span>Cheng Chi<sup>5</sup>,</span>
+            <span>Wenchao Ding<sup>6,7</sup>,</span>
+            <span>Yilun Chen<sup>7</sup>,</span>
+            <span>Yan Wang<sup>1,†</sup></span>
           </div>
-
-          <div class="affiliations">
+          <div class="publication-institution">
             <span><sup>1</sup>Institute for AI Industry Research (AIR), Tsinghua University</span>
             <span><sup>2</sup>Institute of Automation, Chinese Academy of Sciences</span>
-            <span><sup>3</sup>HKUST (Guangzhou)</span>
+            <span><sup>3</sup>The Hong Kong University of Science and Technology (Guangzhou)</span>
             <span><sup>4</sup>Tsinghua University</span>
-            <span><sup>5</sup>Renmin University of China</span>
+            <span><sup>5</sup>School of Information, Renmin University of China</span>
             <span><sup>6</sup>Fudan University</span>
             <span><sup>7</sup>TARS Robotics</span>
           </div>
           <p class="corresponding"><sup>†</sup> Corresponding author</p>
-
-          <div class="links">
-            <a class="link-button" href="assets/TacDyn-WAM.pdf">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l4 4v16H6zM14 2v5h5M9 13h7M9 17h5" /></svg>
-              Paper
+          <div class="publication-links">
+            <a class="button is-dark is-rounded" href="assets/TacDyn-WAM.pdf">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6M9 16h6"/></svg>
+              <span>Paper</span>
             </a>
-            <a class="link-button" href="https://github.com/Enyi-Bean/TacDyn-WAM-Page">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-3 18.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.6 1 1.6 1 .9 1.6 2.3 1.1 2.9.9.1-.7.4-1.2.6-1.4-2.2-.3-4.6-1.1-4.6-4.7 0-1 .4-1.9 1-2.6-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.6 1a9 9 0 0 1 4.8 0c1.8-1.3 2.6-1 2.6-1 .5 1.3.2 2.3.1 2.6.7.7 1 1.6 1 2.6 0 3.6-2.4 4.4-4.6 4.7.4.3.7.9.7 1.8v2.8c0 .3.2.6.7.5A9.5 9.5 0 0 0 12 2.5Z" /></svg>
-              Code
-            </a>
+            <span class="button code-pending" aria-label="Research code coming soon">Code · coming soon</span>
           </div>
+          <nav class="section-nav" aria-label="Page sections">
+            <a href="#abstract">Abstract</a>
+            <a href="#model">Model</a>
+            <a href="#simulation">Simulation</a>
+            <a href="#real-world">Real World</a>
+          </nav>
         </div>
-      </section>
-
-      <section class="teaser container">
-        <figure>
-          <img src="assets/main_framework.png" alt="Overview of the TacDyn-WAM architecture" />
-          <figcaption>
-            <strong>TacDyn-WAM</strong> predicts future visual latents and tactile dynamics in separate target spaces, while a read-only tactile memory provides the current tactile state for action prediction.
-          </figcaption>
-        </figure>
-      </section>
-
-      <section class="paper-section container" id="abstract">
-        <h2>Abstract</h2>
-        <div class="abstract-text">
-          <p>
-            World action models improve robotic manipulation by conditioning actions on predicted futures, yet existing tactile variants largely inherit video-generation pipelines that reconstruct future tactile observations through iterative denoising. Such prediction can become unreliable under deployment drift: small changes in contact position or force may substantially alter tactile pixels even when the underlying contact evolution remains predictable.
-          </p>
-          <p>
-            We introduce <strong>TacDyn-WAM</strong>, a heterogeneous visuo-tactile world action model that predicts implicit tactile dynamics rather than reconstructing future tactile observations. It learns TacRep, a dynamics-aware tactile target space trained through masked spatio-temporal prediction on tactile clips and regularized by relational structure distillation. A visual expert and an Implicit Tactile Dynamics Expert predict future visual and tactile representations in separate target spaces while interacting through joint attention; the tactile expert predicts future representations and their changes at multiple horizons in a single forward pass, and a read-only tactile memory supplies the current tactile state.
-          </p>
-          <p>
-            On UniVTAC, TacDyn-WAM achieves an average success rate of <strong>81.5%</strong> using only the provided demonstrations. On five real-robot tasks, it reaches <strong>71.0%</strong> average success, and modest-scale pretraining raises it to <strong>85.0%</strong>.
-          </p>
-        </div>
-      </section>
-
-      <section class="paper-section container" id="method">
-        <h2>Method</h2>
-        <p class="section-intro">
-          Instead of reconstructing future tactile pixels, TacDyn-WAM predicts contact evolution in a representation space designed for tactile dynamics.
-        </p>
-
-        <div class="method-grid">
-          <figure class="figure-panel">
-            <img src="assets/stage1.png" alt="TacRep representation learning pipeline" loading="lazy" />
-            <figcaption>
-              <strong>TacRep.</strong> Masked spatio-temporal prediction captures contact evolution, while relational structure distillation preserves local spatial relations.
-            </figcaption>
-          </figure>
-          <figure class="figure-panel">
-            <img src="assets/ITDE.png" alt="Implicit Tactile Dynamics Expert" loading="lazy" />
-            <figcaption>
-              <strong>Implicit Tactile Dynamics Expert.</strong> Future tactile representations and their changes are predicted at multiple horizons in one forward pass.
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="paper-section results-section" id="results">
-        <div class="container">
-          <h2>Results</h2>
-          <p class="section-intro">
-            TacDyn-WAM is competitive with models using large-scale visuo-tactile pretraining while training only on the provided UniVTAC demonstrations.
-          </p>
-
-          <div class="stat-row">
-            <div class="stat">
-              <strong>81.5%</strong>
-              <span>UniVTAC average</span>
-              <small>8 simulation tasks</small>
-            </div>
-            <div class="stat">
-              <strong>+25.7</strong>
-              <span>points over InternVLA-A1</span>
-              <small>same evaluation protocol</small>
-            </div>
-            <div class="stat">
-              <strong>85.0%</strong>
-              <span>real-robot average</span>
-              <small>with modest-scale pretraining</small>
-            </div>
-            <div class="stat">
-              <strong>9.7 ms</strong>
-              <span>latency per action</span>
-              <small>on one A100 GPU</small>
-            </div>
-          </div>
-
-          <div class="comparison">
-            <h3>UniVTAC average success rate (%)</h3>
-            <div class="bars" role="img" aria-label="UniVTAC average success rate comparison">
-              <div class="bar"><span>Fast-WAM</span><i><b style="width:48%"></b></i><em>48.0</em></div>
-              <div class="bar"><span>InternVLA-A1</span><i><b style="width:55.8%"></b></i><em>55.8</em></div>
-              <div class="bar"><span>StarVLA-α</span><i><b style="width:56.1%"></b></i><em>56.1</em></div>
-              <div class="bar"><span>TacForcing</span><i><b style="width:65.3%"></b></i><em>65.3</em></div>
-              <div class="bar ours"><span>TacDyn-WAM</span><i><b style="width:81.5%"></b></i><em>81.5</em></div>
-            </div>
-            <p class="chart-note">Comparison among methods without large-scale visuo-tactile trajectory pretraining.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="paper-section container" id="real-robot">
-        <h2>Real-World Experiments</h2>
-        <p class="section-intro">
-          We evaluate five contact-rich manipulation tasks using a Franka Research 3 arm with vision-based tactile sensors on both fingers.
-        </p>
-        <figure class="robot-figure">
-          <img src="assets/real_experiments_figures.png" alt="Five real-world tasks completed by TacDyn-WAM" loading="lazy" />
-          <figcaption>Wipe Whiteboard, Insert Plug, Remove Plug, Stack Cups, and Unscrew Cup Lid.</figcaption>
-        </figure>
-      </section>
-
-      <section class="paper-section citation-section" id="citation">
-        <div class="container">
-          <h2>BibTeX</h2>
-          <div class="bibtex">
-            <button type="button" class="copy-button">Copy</button>
-            <pre><code>@article{wang2026tacdynwam,
-  title   = {TacDyn-WAM: Learning Implicit Tactile Dynamics in a
-             Heterogeneous Visuo-Tactile World Action Model},
-  author  = {Wang, Enyi and Wang, Mingxin and Shi, Quan and others},
-  year    = {2026}
-}</code></pre>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container">
-        <p>TacDyn-WAM · Preprint 2026</p>
-        <p>This website is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
       </div>
-    </footer>
+    </header>
 
-    <script src="script.js"></script>
-  </body>
+    <section class="section soft-section" id="abstract" aria-labelledby="abstract-title">
+      <div class="container is-max-desktop">
+        <h2 class="title section-title has-text-centered" id="abstract-title">Abstract</h2>
+        <div class="abstract-copy content">
+          <p>World action models improve robotic manipulation by conditioning actions on predicted futures, yet existing tactile variants largely inherit video-generation pipelines that reconstruct future tactile observations through iterative denoising.
+          Such prediction can become unreliable under deployment drift: small changes in contact position or force may substantially alter tactile pixels even when the underlying contact evolution remains predictable.
+          We introduce <strong>TacDyn-WAM</strong>, a heterogeneous visuo-tactile world action model that predicts implicit tactile dynamics rather than reconstructing future tactile observations.
+          It learns TacRep, a dynamics-aware tactile target space trained through masked spatio-temporal prediction on tactile clips and regularized by relational structure distillation.
+          A visual expert and an Implicit Tactile Dynamics Expert predict future visual and tactile representations in separate target spaces while interacting through joint attention; the tactile expert predicts future representations and their changes at multiple horizons in a single forward pass, and a read-only tactile memory supplies the current tactile state.
+          On UniVTAC, TacDyn-WAM achieves an average success rate of <strong>81.5%</strong> using only the provided demonstrations, reaching state-of-the-art-level performance and remaining competitive with models pretrained on large-scale visuo-tactile trajectories.
+          Ablations confirm the benefits of both tactile pathways and TacRep over pixel-reconstruction and static alternatives.
+          On five real-robot tasks, TacDyn-WAM reaches <strong>71.0%</strong> average success, and modest-scale pretraining raises it to <strong>85.0%</strong>, further validating our method.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="model" aria-labelledby="model-title">
+      <div class="container is-max-desktop">
+        <h2 class="title section-title has-text-centered" id="model-title">Model Architecture</h2>
+        <p class="section-intro">Predicting future vision and tactile dynamics for contact-rich manipulation.</p>
+        <figure class="architecture-figure">
+          <img src="assets/main_framework.png" width="942" height="482" alt="TacDyn-WAM architecture: visual and tactile experts predict separate futures through joint attention, with tactile memory supporting the action expert." loading="lazy">
+          <figcaption><strong>TacDyn-WAM overview.</strong> The visual and tactile experts form a heterogeneous world model. A read-only Tactile Understanding Memory provides direct access to the current tactile state, allowing actions to use both present contacts and predicted futures.</figcaption>
+        </figure>
+        <div class="method-details">
+          <figure>
+            <h3 class="figure-heading">Learning TacRep</h3>
+            <img src="assets/stage1.png" alt="TacRep learning through masked tactile dynamics prediction and relational structure distillation." loading="lazy">
+            <figcaption>Masked spatio-temporal prediction learns contact evolution. Relational structure distillation regularizes local patch relations using a frozen DINOv2 teacher.</figcaption>
+          </figure>
+          <figure>
+            <h3 class="figure-heading">Implicit Tactile Dynamics Expert</h3>
+            <img src="assets/ITDE.png" alt="The Implicit Tactile Dynamics Expert predicts future representations and their changes at multiple horizons." loading="lazy">
+            <figcaption>Future tactile representations and their changes are predicted at multiple horizons in a single forward pass, without iterative denoising.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="simulation" aria-labelledby="simulation-title">
+      <div class="container results-container">
+        <h2 class="title section-title has-text-centered" id="simulation-title">Simulation Experiments</h2>
+        <p class="section-intro">Eight UniVTAC tasks, 100 rollouts per task. TacDyn-WAM is trained on the provided demonstrations only.</p>
+        <div class="result-summary">
+          <p><strong>81.5%</strong><span>average success rate</span></p>
+          <p><strong>+25.7 points</strong><span>over InternVLA-A1</span></p>
+          <p><strong>7 of 8 tasks</strong><span>at least 72% success</span></p>
+        </div>
+        <div class="table-scroll" role="region" aria-label="UniVTAC results table, scroll horizontally on small screens" tabindex="0">
+          <table class="results-table simulation-table">
+            <caption>Success rates (%) on UniVTAC</caption>
+            <thead><tr><th scope="col">Method</th><th scope="col">Insert<br>Hole</th><th scope="col">Insert<br>Tube</th><th scope="col">Lift<br>Can</th><th scope="col">Pull-out<br>Key</th><th scope="col">Put<br>Bottle</th><th scope="col">Lift<br>Bottle</th><th scope="col">Grasp<br>Classify</th><th scope="col">Insert<br>HDMI</th><th scope="col">Avg.</th></tr></thead>
+            <tbody>
+<tr class="group-row"><th colspan="10" scope="colgroup">Vision-only policies</th></tr><tr><th scope="row">π₀.₅</th><td>25</td><td>74</td><td>6</td><td>35</td><td>34</td><td>100</td><td>49</td><td>8</td><td class="average">41.4</td></tr>
+<tr><th scope="row">StarVLA-α</th><td>52</td><td>69</td><td>65</td><td>51</td><td>88</td><td>32</td><td>68</td><td>24</td><td class="average">56.1</td></tr>
+<tr><th scope="row">InternVLA-A1</th><td>70</td><td>56</td><td>58</td><td>67</td><td>37</td><td>58</td><td>88</td><td>12</td><td class="average">55.8</td></tr>
+<tr><th scope="row">Xiaomi-Robotics-0</th><td>96</td><td>98</td><td>13</td><td>80</td><td>12</td><td>21</td><td>45</td><td>69</td><td class="average">54.3</td></tr>
+<tr><th scope="row">GigaWorld-Policy</th><td>12</td><td>9</td><td>0</td><td>32</td><td>21</td><td>38</td><td>20</td><td>0</td><td class="average">16.5</td></tr>
+<tr><th scope="row">LingBot-VA</th><td>42</td><td>96</td><td>0</td><td>58</td><td>0</td><td>0</td><td>17</td><td>38</td><td class="average">31.4</td></tr>
+<tr><th scope="row">Fast-WAM</th><td>66</td><td>98</td><td>0</td><td>73</td><td>35</td><td>21</td><td>72</td><td>19</td><td class="average">48.0</td></tr>
+<tr class="group-row"><th colspan="10" scope="colgroup">Visuo-tactile policies</th></tr><tr><th scope="row">ACT+UniVTAC</th><td>24</td><td>56</td><td>29</td><td>46</td><td>31</td><td>71</td><td>99</td><td>28</td><td class="average">48.0</td></tr>
+<tr><th scope="row">VITaL</th><td>25</td><td>34</td><td>8</td><td>47</td><td>32</td><td>72</td><td>100</td><td>6</td><td class="average">40.5</td></tr>
+<tr><th scope="row">RDP</th><td>23</td><td>75</td><td>12</td><td>18</td><td>41</td><td>84</td><td>—</td><td>—</td><td class="average">42.2</td></tr>
+<tr><th scope="row">TacForcing</th><td>69</td><td>79</td><td>63</td><td>48</td><td>43</td><td>90</td><td>—</td><td>—</td><td class="average">65.3</td></tr>
+<tr><th scope="row">Tactile-WAM</th><td>20</td><td>85</td><td>10</td><td>20</td><td>45</td><td>5</td><td>55</td><td>0</td><td class="average">30.0</td></tr>
+<tr class="group-row"><th colspan="10" scope="colgroup">Policies with large-scale visuo-tactile pretraining · shown for context</th></tr><tr class="pretrained"><th scope="row">FTP-1</th><td>64</td><td>79</td><td>65</td><td>48</td><td>47</td><td>97</td><td>99</td><td>4</td><td class="average">62.9</td></tr>
+<tr class="pretrained"><th scope="row">N₀-VTLA</th><td>95</td><td>99</td><td>88</td><td>99</td><td>60</td><td>99</td><td>100</td><td>25</td><td class="average">83.1</td></tr>
+<tr class="pretrained"><th scope="row">N₀-TWAM (20% data)</th><td>78</td><td>96</td><td>80</td><td>25</td><td>46</td><td>51</td><td>95</td><td>52</td><td class="average">65.4</td></tr>
+<tr class="pretrained"><th scope="row">N₀-TWAM</th><td>99</td><td>98</td><td>93</td><td>79</td><td>87</td><td>58</td><td>94</td><td>68</td><td class="average">84.5</td></tr>
+<tr class="group-row"><th colspan="10" scope="colgroup">Our method · provided demonstrations only</th></tr><tr class="ours"><th scope="row">TacDyn-WAM (ours)</th><td>91</td><td>97</td><td>87</td><td>97</td><td>72</td><td>97</td><td>99</td><td>12</td><td class="average">81.5</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">Gray rows use large-scale visuo-tactile trajectory pretraining and are shown for context, as in the paper. “—” denotes an unreported result; averages for incomplete rows use their reported tasks.</p>
+      </div>
+    </section>
+
+    <section class="section" id="real-world" aria-labelledby="real-title">
+      <div class="container is-max-desktop">
+        <h2 class="title section-title has-text-centered" id="real-title">Real-World Experiments</h2>
+        <p class="section-intro">Five contact-rich tasks on a Franka Research 3 arm with Xense tactile sensors on both fingers. Each task uses 60 demonstrations and 20 evaluation trials per policy.</p>
+        <figure class="robot-figure">
+          <img src="assets/real_experiments_figures.png" alt="Robot execution sequences for Wipe Whiteboard, Insert Plug, Remove Plug, Stack Cups, and Unscrew Cup Lid." loading="lazy">
+          <figcaption><strong>Five real-world manipulation tasks.</strong> Each row shows a task execution sequence, from left to right.</figcaption>
+        </figure>
+        <div class="table-scroll real-results" role="region" aria-label="Real-world success rates table, scroll horizontally on small screens" tabindex="0">
+          <table class="results-table">
+            <caption>Real-world success rates (%)</caption>
+            <thead><tr><th scope="col">Method</th><th scope="col">Stack<br>Cups</th><th scope="col">Remove<br>Plug</th><th scope="col">Insert<br>Plug</th><th scope="col">Unscrew<br>Cup Lid</th><th scope="col">Wipe<br>Whiteboard</th><th scope="col">Avg.</th></tr></thead>
+            <tbody>
+<tr><th scope="row">LingBot-VA</th><td>40</td><td>10</td><td>45</td><td>15</td><td>50</td><td class="average">32.0</td></tr>
+<tr><th scope="row">InternVLA-A1</th><td>55</td><td>20</td><td>45</td><td>10</td><td>70</td><td class="average">40.0</td></tr>
+<tr><th scope="row">FTP-1</th><td>65</td><td>45</td><td>65</td><td>20</td><td>80</td><td class="average">55.0</td></tr>
+<tr class="ours"><th scope="row">TacDyn-WAM</th><td>80</td><td>60</td><td>80</td><td>40</td><td>95</td><td class="average">71.0</td></tr>
+<tr class="ours"><th scope="row">TacDyn-WAM (pretrained)</th><td>95</td><td>85</td><td>90</td><td>55</td><td>100</td><td class="average">85.0</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">All baselines are fine-tuned per task on the same demonstrations. Modest-scale pretraining raises TacDyn-WAM’s average success from 71.0% to 85.0%.</p>
+
+        <!-- Five video slots. Fill in REAL_WORLD_VIDEOS in script.js when clips are ready. -->
+        <section class="video-section" id="real-world-videos" aria-labelledby="video-title" hidden>
+          <h3 class="title video-title" id="video-title">Task Demonstrations</h3>
+          <div class="video-grid">
+            <figure data-task="stack-cups" hidden><video controls muted playsinline loop preload="metadata" aria-label="Stack Cups demonstration"></video><figcaption>Stack Cups</figcaption></figure>
+            <figure data-task="remove-plug" hidden><video controls muted playsinline loop preload="metadata" aria-label="Remove Plug demonstration"></video><figcaption>Remove Plug</figcaption></figure>
+            <figure data-task="insert-plug" hidden><video controls muted playsinline loop preload="metadata" aria-label="Insert Plug demonstration"></video><figcaption>Insert Plug</figcaption></figure>
+            <figure data-task="unscrew-cup-lid" hidden><video controls muted playsinline loop preload="metadata" aria-label="Unscrew Cup Lid demonstration"></video><figcaption>Unscrew Cup Lid</figcaption></figure>
+            <figure data-task="wipe-whiteboard" hidden><video controls muted playsinline loop preload="metadata" aria-label="Wipe Whiteboard demonstration"></video><figcaption>Wipe Whiteboard</figcaption></figure>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section soft-section" aria-labelledby="bibtex-title">
+      <div class="container is-max-desktop">
+        <h2 class="title section-title" id="bibtex-title">BibTeX</h2>
+        <div class="citation-toolbar"><button class="copy-button" type="button">Copy BibTeX</button><span class="copy-status" role="status" aria-live="polite"></span></div>
+        <pre class="bibtex"><code>@misc{wang2026tacdynwam,
+  title  = {TacDyn-WAM: Learning Implicit Tactile Dynamics in a
+            Heterogeneous Visuo-Tactile World Action Model},
+  author = {Enyi Wang and Mingxin Wang and Quan Shi and Hetian Guo
+            and Hongyu Wang and Xi Wang and Bin Qian and Yupeng Zheng
+            and Wenxuan Song and Houde Liu and Yong Xu and Cheng Chi
+            and Wenchao Ding and Yilun Chen and Yan Wang},
+  year   = {2026},
+  note   = {Preprint}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container is-max-desktop has-text-centered">
+      <p>TacDyn-WAM · 2026</p>
+      <p class="footer-credit">Page layout adapted from <a href="https://enyi-bean.github.io/ADM-DP/">ADM-DP</a>, based on the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a>.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
