@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TacDyn-WAM learns implicit tactile dynamics in a heterogeneous visuo-tactile world action model for contact-rich robot manipulation."
+    />
+    <meta name="theme-color" content="#f5f7f2" />
+    <meta property="og:title" content="TacDyn-WAM" />
+    <meta
+      property="og:description"
+      content="Learning Implicit Tactile Dynamics in a Heterogeneous Visuo-Tactile World Action Model"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/main_framework.png" />
+    <title>TacDyn-WAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="TacDyn-WAM home">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span>TacDyn-WAM</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#robots">Real Robot</a>
+        <a class="nav-pill" href="assets/TacDyn-WAM.pdf">Paper <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> Preprint · 2026</div>
+          <h1>
+            <span class="gradient-text">TacDyn-WAM</span>
+            <small>Learning Implicit Tactile Dynamics in a Heterogeneous Visuo-Tactile World Action Model</small>
+          </h1>
+          <p class="hero-lead">
+            A world action model that predicts how touch evolves in a dynamics-aware representation space—without reconstructing future tactile pixels or iterative denoising.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="assets/TacDyn-WAM.pdf">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h8l3 3v14h-11zM14 3.5v4h4M9 12h6M9 15h6"/></svg>
+              Read the paper
+            </a>
+            <a class="button button-secondary" href="https://github.com/Enyi-Bean/TacDyn-WAM-Page">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.7a9.3 9.3 0 0 0-2.9 18.1c.5.1.6-.2.6-.5v-1.8c-2.7.6-3.3-1.1-3.3-1.1-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.8.8.1-.6.4-1.1.6-1.3-2.2-.2-4.4-1.1-4.4-4.6 0-1 .4-1.9 1-2.5-.1-.2-.4-1.2.1-2.5 0 0 .8-.3 2.6 1a9 9 0 0 1 4.8 0c1.8-1.2 2.6-1 2.6-1 .5 1.3.2 2.3.1 2.5.6.6 1 1.5 1 2.5 0 3.6-2.2 4.4-4.4 4.6.4.3.7.9.7 1.8v2.7c0 .4.2.6.7.5A9.3 9.3 0 0 0 12 2.7Z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="120">
+          <div class="visual-halo"></div>
+          <div class="paper-card">
+            <div class="paper-card-top">
+              <span>Model overview</span>
+              <span class="live-dot"><i></i> one-pass prediction</span>
+            </div>
+            <img src="assets/main_framework.png" alt="Architecture of the TacDyn-WAM model" />
+          </div>
+          <div class="floating-tag tag-touch"><i></i> tactile dynamics</div>
+          <div class="floating-tag tag-action"><i></i> action chunk</div>
+        </div>
+      </section>
+
+      <section class="authors shell reveal" aria-label="Authors and affiliations">
+        <p class="author-list">
+          Enyi Wang<sup>1</sup>, Mingxin Wang<sup>1,4</sup>, Quan Shi<sup>1</sup>, Hetian Guo<sup>1</sup>, Hongyu Wang<sup>1</sup>, Xi Wang<sup>1</sup>, Bin Qian<sup>1,4</sup>, Yupeng Zheng<sup>2</sup>, Wenxuan Song<sup>3</sup>, Houde Liu<sup>4</sup>, Yong Xu<sup>1</sup>, Cheng Chi<sup>5</sup>, Wenchao Ding<sup>6,7</sup>, Yilun Chen<sup>7</sup>, Yan Wang<sup>1,†</sup>
+        </p>
+        <p class="affiliations">
+          <span><sup>1</sup> AIR, Tsinghua University</span>
+          <span><sup>2</sup> Chinese Academy of Sciences</span>
+          <span><sup>3</sup> HKUST (Guangzhou)</span>
+          <span><sup>4</sup> Tsinghua University</span>
+          <span><sup>5</sup> Renmin University of China</span>
+          <span><sup>6</sup> Fudan University</span>
+          <span><sup>7</sup> TARS Robotics</span>
+        </p>
+        <p class="corresponding"><sup>†</sup> Corresponding author</p>
+      </section>
+
+      <section class="metric-band">
+        <div class="shell metric-grid">
+          <article class="metric reveal">
+            <strong>81.5<span>%</span></strong>
+            <p>UniVTAC average</p>
+            <small>using provided demonstrations only</small>
+          </article>
+          <article class="metric reveal" data-delay="60">
+            <strong>85.0<span>%</span></strong>
+            <p>Real-robot average</p>
+            <small>with modest-scale pretraining</small>
+          </article>
+          <article class="metric reveal" data-delay="120">
+            <strong>9.7<span> ms</span></strong>
+            <p>Latency per action</p>
+            <small>one-pass tactile prediction</small>
+          </article>
+          <article class="metric reveal" data-delay="180">
+            <strong>5</strong>
+            <p>Real-world tasks</p>
+            <small>contact-rich manipulation</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell" id="method">
+        <div class="section-heading reveal">
+          <div>
+            <p class="kicker">The core idea</p>
+            <h2>Predict the dynamics of touch,<br />not its pixels.</h2>
+          </div>
+          <p>
+            Tactile pixels can change sharply under small contact shifts. TacDyn-WAM forecasts compact, dynamics-aware tactile representations alongside visual futures, then uses both to predict actions.
+          </p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card reveal">
+            <span class="idea-number">01</span>
+            <div class="idea-icon icon-blue" aria-hidden="true">T</div>
+            <h3>TacRep</h3>
+            <p>A tactile target space learned from masked spatio-temporal prediction and relational structure distillation.</p>
+          </article>
+          <article class="idea-card reveal" data-delay="80">
+            <span class="idea-number">02</span>
+            <div class="idea-icon icon-purple" aria-hidden="true">↗</div>
+            <h3>Implicit dynamics</h3>
+            <p>One forward pass predicts future tactile states and their changes at multiple temporal horizons.</p>
+          </article>
+          <article class="idea-card reveal" data-delay="160">
+            <span class="idea-number">03</span>
+            <div class="idea-icon icon-green" aria-hidden="true">M</div>
+            <h3>Tactile memory</h3>
+            <p>A read-only memory exposes the current tactile state while heterogeneous experts model the future.</p>
+          </article>
+        </div>
+
+        <figure class="figure-card reveal">
+          <div class="figure-label"><span>Architecture</span> Heterogeneous visuo-tactile world action model</div>
+          <img src="assets/main_framework.png" alt="TacDyn-WAM architecture diagram" loading="lazy" />
+          <figcaption>Visual and tactile experts retain distinct target spaces while interacting through block-wise joint attention.</figcaption>
+        </figure>
+      </section>
+
+      <section class="section section-tint" id="results">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div>
+              <p class="kicker">Simulation benchmark</p>
+              <h2>Strong results without<br />large-scale pretraining.</h2>
+            </div>
+            <p>
+              On eight UniVTAC tasks, TacDyn-WAM reaches an 81.5% average success rate using only the benchmark demonstrations.
+            </p>
+          </div>
+
+          <div class="results-grid">
+            <div class="chart-card reveal">
+              <div class="chart-head">
+                <div>
+                  <h3>UniVTAC average success</h3>
+                  <p>Methods trained without large-scale visuo-tactile trajectory pretraining</p>
+                </div>
+                <span>Success rate (%)</span>
+              </div>
+              <div class="bar-chart" role="img" aria-label="Average success rates: Fast-WAM 48.0, InternVLA-A1 55.8, StarVLA-alpha 56.1, TacForcing 65.3, TacDyn-WAM 81.5 percent">
+                <div class="bar-row">
+                  <span>Fast-WAM</span><div class="bar-track"><i style="--value:48"></i></div><b>48.0</b>
+                </div>
+                <div class="bar-row">
+                  <span>InternVLA-A1</span><div class="bar-track"><i style="--value:55.8"></i></div><b>55.8</b>
+                </div>
+                <div class="bar-row">
+                  <span>StarVLA-α</span><div class="bar-track"><i style="--value:56.1"></i></div><b>56.1</b>
+                </div>
+                <div class="bar-row">
+                  <span>TacForcing</span><div class="bar-track"><i style="--value:65.3"></i></div><b>65.3</b>
+                </div>
+                <div class="bar-row featured">
+                  <span>TacDyn-WAM</span><div class="bar-track"><i style="--value:81.5"></i></div><b>81.5</b>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-callouts">
+              <article class="callout reveal" data-delay="80">
+                <strong>+25.7</strong>
+                <p>points over its vision-only base model, InternVLA-A1.</p>
+              </article>
+              <article class="callout dark reveal" data-delay="140">
+                <strong>7 / 8</strong>
+                <p>tasks reach at least 72% success.</p>
+              </article>
+              <article class="callout reveal" data-delay="200">
+                <strong>1 pass</strong>
+                <p>for multi-horizon tactile dynamics prediction.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell tacrep-section">
+        <div class="tacrep-copy reveal">
+          <p class="kicker">Learning TacRep</p>
+          <h2>A representation built for contact evolution.</h2>
+          <p>
+            Masked tactile clips teach the encoder predictable temporal change. A frozen DINOv2 teacher regularizes local patch relations without forcing tactile features into a static image space.
+          </p>
+          <ul class="check-list">
+            <li><span>✓</span> Dynamics-aware spatio-temporal targets</li>
+            <li><span>✓</span> Robust local relational structure</li>
+            <li><span>✓</span> No future tactile image reconstruction</li>
+          </ul>
+        </div>
+        <figure class="tacrep-figure reveal" data-delay="100">
+          <img src="assets/stage1.png" alt="TacRep training pipeline" loading="lazy" />
+        </figure>
+      </section>
+
+      <section class="section section-dark" id="robots">
+        <div class="shell">
+          <div class="dark-heading reveal">
+            <div>
+              <p class="kicker">From simulation to hardware</p>
+              <h2>Real touch.<br />Real manipulation.</h2>
+            </div>
+            <div class="dark-stat">
+              <strong>85.0%</strong>
+              <span>average success across five real-world tasks</span>
+            </div>
+          </div>
+
+          <div class="robot-figure reveal">
+            <img src="assets/real_experiments_figures.png" alt="TacDyn-WAM completing five real-world manipulation tasks" loading="lazy" />
+          </div>
+
+          <div class="task-list reveal">
+            <span>Stack Cups</span>
+            <span>Remove Plug</span>
+            <span>Insert Plug</span>
+            <span>Unscrew Cup Lid</span>
+            <span>Wipe Whiteboard</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell citation-section">
+        <div class="citation-copy reveal">
+          <p class="kicker">Citation</p>
+          <h2>Build on our work.</h2>
+          <p>If TacDyn-WAM is useful in your research, please consider citing our paper.</p>
+        </div>
+        <div class="bibtex-card reveal" data-delay="80">
+          <button class="copy-button" type="button" aria-label="Copy BibTeX">Copy</button>
+          <pre><code>@article{wang2026tacdynwam,
+  title   = {TacDyn-WAM: Learning Implicit Tactile Dynamics
+             in a Heterogeneous Visuo-Tactile World Action Model},
+  author  = {Wang, Enyi and Wang, Mingxin and Shi, Quan and others},
+  year    = {2026}
+}</code></pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div>
+          <a class="brand footer-brand" href="#top">
+            <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span>TacDyn-WAM</span>
+          </a>
+          <p>Learning the dynamics of touch for better robot action.</p>
+        </div>
+        <div class="footer-links">
+          <a href="assets/TacDyn-WAM.pdf">Paper</a>
+          <a href="https://github.com/Enyi-Bean/TacDyn-WAM-Page">GitHub</a>
+          <a href="#method">Method</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
