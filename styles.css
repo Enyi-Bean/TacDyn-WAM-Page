@@ -61,6 +61,7 @@ sup { font-size: .66em; margin-left: 1px; }
 .abstract-copy p { margin: 0; }
 strong { color: var(--ink); font-weight: 650; }
 .section-intro { max-width: 780px; margin: -9px auto 30px; text-align: center; color: var(--muted); font-size: 15px; line-height: 1.8; }
+.section-intro.model-intro { font-size: 17px; }
 figure { margin: 0; }
 figure img { display: block; width: 100%; height: auto; }
 figcaption { color: var(--muted); font-size: 13px; line-height: 1.75; margin-top: 18px; }
@@ -119,6 +120,7 @@ figcaption { color: var(--muted); font-size: 13px; line-height: 1.75; margin-top
   .section-title { font-size: 25px !important; }
   .abstract-copy { text-align: left; font-size: 14px; }
   .section-intro { font-size: 13px; }
+  .section-intro.model-intro { font-size: 15px; }
   .training-figure .figure-heading { transform: translateX(8px); }
   .performance-highlight { font-size: 20px; }
   .method-details { grid-template-columns: 1fr; gap: 28px; }

@@ -82,7 +82,7 @@
     <section class="section" id="model" aria-labelledby="model-title">
       <div class="container is-max-desktop">
         <h2 class="title section-title has-text-centered" id="model-title">Model Architecture</h2>
-        <p class="section-intro">Predicting trends in contact evolution rather than future tactile pixels.</p>
+        <p class="section-intro model-intro">Predicting dynamic trends in contact evolution rather than future tactile pixels.</p>
         <figure class="architecture-figure">
           <img src="assets/main_framework.png" width="942" height="482" alt="TacDyn-WAM architecture: visual and tactile experts predict separate futures through joint attention, with tactile memory supporting the action expert." loading="lazy">
           <figcaption><strong>TacDyn-WAM overview.</strong> The Visual Latent Generation Expert predicts future visual latents, while the Implicit Tactile Dynamics Expert (ITDE) predicts future TacRep representations and their changes at multiple horizons in a single forward pass. The two experts use separate parameters and target spaces, coupled through joint attention. A read-only Tactile Understanding Memory supplies the current tactile state as keys and values, enabling the Action Expert to combine present contacts with predicted visual and tactile futures.</figcaption>
