@@ -64,7 +64,7 @@ strong { color: var(--ink); font-weight: 650; }
 figure { margin: 0; }
 figure img { display: block; width: 100%; height: auto; }
 figcaption { color: var(--muted); font-size: 13px; line-height: 1.75; margin-top: 18px; }
-.architecture-figure { max-width: 656px; margin: 0 auto; }
+.architecture-figure { max-width: 720px; margin: 0 auto; }
 .architecture-figure figcaption { text-align: left; }
 .method-details { display: grid; grid-template-columns: 1fr 1fr; gap: 38px; margin-top: 44px; padding-top: 32px; border-top: 1px solid var(--line); }
 .method-details > figure { min-width: 0; }
