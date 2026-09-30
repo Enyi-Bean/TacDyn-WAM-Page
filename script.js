@@ -18,20 +18,3 @@ for (const { task, src } of REAL_WORLD_VIDEOS) {
   figure.hidden = false;
   videoSection.hidden = false;
 }
-
-const copyButton = document.querySelector('.copy-button');
-copyButton?.addEventListener('click', async () => {
-  const code = document.querySelector('.bibtex code');
-  const status = document.querySelector('.copy-status');
-  try {
-    await navigator.clipboard.writeText(code.textContent);
-    status.textContent = 'BibTeX copied.';
-  } catch {
-    const selection = window.getSelection();
-    const range = document.createRange();
-    range.selectNodeContents(code);
-    selection.removeAllRanges();
-    selection.addRange(range);
-    status.textContent = 'Citation selected. Press Ctrl+C or Command+C to copy.';
-  }
-});

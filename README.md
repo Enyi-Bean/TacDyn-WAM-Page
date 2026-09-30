@@ -21,7 +21,6 @@ Open http://localhost:8000. GitHub Pages serves the root of the main branch.
 - Abstract, author order, affiliations, and results follow the paper.
 - All simulation baseline rows are included, with pretrained methods labeled.
 - The research Code button is pending until a research-code repository is supplied.
-- BibTeX is a provisional preprint citation; add the arXiv identifier when available.
 
 ## Add the five real-world videos
 
