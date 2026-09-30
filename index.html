@@ -149,11 +149,7 @@
     <section class="section" id="real-world" aria-labelledby="real-title">
       <div class="container is-max-desktop">
         <h2 class="title section-title has-text-centered" id="real-title">Real-World Experiments</h2>
-        <p class="section-intro">Five contact-rich tasks on a Franka Research 3 arm with Xense tactile sensors on both fingers. Each task uses 60 demonstrations and 20 evaluation trials per policy.</p>
-        <figure class="robot-figure">
-          <img src="assets/real_experiments_figures.png" alt="Robot execution sequences for Wipe Whiteboard, Insert Plug, Remove Plug, Stack Cups, and Unscrew Cup Lid." loading="lazy">
-          <figcaption><strong>Five real-world manipulation tasks.</strong> Each row shows a task execution sequence, from left to right.</figcaption>
-        </figure>
+        <p class="section-intro">We evaluate five contact-rich tasks—Stack Cups, Remove Plug, Insert Plug, Unscrew Cup Lid, and Wipe Whiteboard—on a Franka Research 3 arm with Xense tactile sensors on both fingers. Each task uses 60 demonstrations and 20 evaluation trials per policy.</p>
         <div class="table-scroll real-results" role="region" aria-label="Real-world success rates table, scroll horizontally on small screens" tabindex="0">
           <table class="results-table">
             <caption>Real-world success rates (%)</caption>
@@ -167,7 +163,7 @@
             </tbody>
           </table>
         </div>
-        <p class="table-note">All baselines are fine-tuned per task on the same demonstrations. Modest-scale pretraining raises TacDyn-WAM’s average success from 71.0% to 85.0%.</p>
+        <p class="table-note"><strong>Modest-scale tactile pretraining.</strong> Using a 6,000-trajectory OmniViTac subset, with our 300 task demonstrations additionally used in Stages 1–2, pretraining improves all five tasks and raises average success from <strong>71.0% to 85.0%</strong>. All baselines are fine-tuned per task on the same demonstrations.</p>
 
         <!-- Five video slots. Fill in REAL_WORLD_VIDEOS in script.js when clips are ready. -->
         <section class="video-section" id="real-world-videos" aria-labelledby="video-title" hidden>
