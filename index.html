@@ -99,6 +99,11 @@
             <figcaption>Future tactile representations and their changes are predicted at multiple horizons in a single forward pass, without iterative denoising.</figcaption>
           </figure>
         </div>
+        <figure class="training-figure">
+          <h3 class="figure-heading">Staged Training</h3>
+          <img src="assets/causal_mask.png" width="1311" height="561" alt="Attention masks and trainable modules in Stage 2: Tactile World Grounding, Stage 3: Tactile–Action Alignment, and Stage 4: Joint Training." loading="lazy">
+          <figcaption><strong>Progressive integration of tactile modules.</strong> After Stage 1 learns TacRep, Stage 2 grounds the tactile world model, Stage 3 aligns tactile information with actions, and Stage 4 jointly trains the model. The diagram shows attention connections in Stages 2–4: bold outlines mark newly unlocked connections, flames indicate trainable modules, and snowflakes indicate frozen modules.</figcaption>
+        </figure>
       </div>
     </section>
 

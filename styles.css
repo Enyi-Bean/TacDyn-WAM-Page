@@ -71,6 +71,8 @@ figcaption { color: var(--muted); font-size: 13px; line-height: 1.75; margin-top
 .figure-heading { font-size: 17px; font-weight: 700; text-align: center; margin-bottom: 20px; }
 .method-details img { height: 310px; object-fit: contain; }
 .method-details figcaption { text-align: left; }
+.training-figure { max-width: 820px; margin: 44px auto 0; padding-top: 32px; border-top: 1px solid var(--line); }
+.training-figure figcaption { text-align: left; }
 .results-container { max-width: 1160px !important; }
 .result-summary { display: flex; justify-content: center; gap: 65px; margin: 0 auto 30px; text-align: center; }
 .result-summary strong { display: block; font-size: 24px; color: var(--blue); letter-spacing: -.035em; }
